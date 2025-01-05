@@ -1,5 +1,6 @@
 
 **Croma Website**
+
 **Project Description**
 The Croma Website is a comprehensive e-commerce platform designed to provide users with an interactive and seamless shopping experience. Inspired by the leading online retail platforms, this project showcases products across various categories like electronics, mobiles, appliances, and more, with functionalities such as a shopping cart, user authentication, and a visually appealing design.
 
