@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Returns and Orders</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 20px auto;
+      background: #fff;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+    h1 {
+      color: #333;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .order-section {
+      margin-bottom: 30px;
+    }
+    .order-section h2 {
+      color: #444;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+    }
+    .order-list {
+      list-style: none;
+      padding: 0;
+    }
+    .order-item {
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 15px;
+      margin-bottom: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .order-item .details {
+      max-width: 70%;
+    }
+    .order-item .actions button {
+      padding: 10px 20px;
+      border: none;
+      background: #007bff;
+      color: white;
+      cursor: pointer;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+    .order-item .actions button:hover {
+      background: #0056b3;
+    }
+    .footer {
+      text-align: center;
+      color: #777;
+      padding: 10px 0;
+      border-top: 1px solid #ddd;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Returns and Orders</h1>
+
+    <!-- Orders Section -->
+    <div class="order-section">
+      <h2>Your Orders</h2>
+      <ul class="order-list">
+        <li class="order-item">
+          <div class="details">
+            <p><strong>Order #12345</strong> - Wireless Headphones</p>
+            <p>Placed on: January 1, 2025</p>
+          </div>
+          <div class="actions">
+            <button onclick="alert('Order details coming soon!')">View Order</button>
+          </div>
+        </li>
+        <li class="order-item">
+          <div class="details">
+            <p><strong>Order #67890</strong> - Smartwatch</p>
+            <p>Placed on: December 25, 2024</p>
+          </div>
+          <div class="actions">
+            <button onclick="alert('Order details coming soon!')">View Order</button>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Returns Section -->
+    <div class="order-section">
+      <h2>Initiate a Return</h2>
+      <form action="process-return.html" method="POST">
+        <label for="order-id">Order ID:</label><br>
+        <input type="text" id="order-id" name="order-id" required placeholder="Enter Order ID"><br><br>
+        
+        <label for="reason">Reason for Return:</label><br>
+        <textarea id="reason" name="reason" rows="4" required placeholder="Describe the issue"></textarea><br><br>
+        
+        <button type="submit">Submit Return Request</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2025 Croma. All Rights Reserved.</p>
+  </div>
+</body>
+</html>
