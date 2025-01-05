@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bestsellers</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    .bestseller-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .bestseller-item {
+      padding: 10px;
+      background: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      text-align: center;
+    }
+    .bestseller-item img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    .bestseller-item h3 {
+      font-size: 18px;
+      margin: 10px 0;
+      color: #333;
+    }
+    .bestseller-item p {
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Bestsellers</h1>
+    <div class="bestseller-list">
+      <div class="bestseller-item">
+        <img src="./assets/download (1).jpeg" alt="Latest 1">
+        <h3>Latest Product 1</h3>
+        <p>$500</p>
+      </div>
+      <div class="bestseller-item">
+        <img src="./assets/download (2).jpeg" alt="Latest 2">
+        <h3>Latest Product 2</h3>
+        <p>$700</p>
+      </div>
+      <div class="bestseller-item">
+        <img src="./assets/download (3).jpeg" alt="Latest 3">
+        <h3>Latest Product 3</h3>
+        <p>$600</p>
+      </div>
+      <div class="bestseller-item">
+        <img src="./assets/download.jpeg" alt="Latest 4">
+        <h3>LatestProduct 3</h3>
+        <p>$600</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
